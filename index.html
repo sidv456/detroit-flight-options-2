@@ -78,8 +78,8 @@ a{color:inherit}
 h1{
   font-family:var(--display);
   font-weight:900;
-  font-size:clamp(3.1rem,12.5vw,7.25rem);
-  line-height:.9;
+  font-size:clamp(3.1rem,12.5vw,6.5rem);
+  line-height:.95;
   letter-spacing:-.005em;
   color:var(--yellow);
   text-wrap:balance;
@@ -132,7 +132,7 @@ h1{
 .diagram text{font-family:var(--display);font-weight:800;fill:#fff}
 .diagram .code{font-size:34px}
 .diagram .dtw{font-size:54px;fill:var(--char)}
-.diagram .small{font-family:var(--body);font-weight:600;font-size:15px;fill:#B4BDC2}
+.diagram .small{font-family:var(--body);font-weight:600;font-size:18px;fill:#B4BDC2}
 .diagram .route{
   fill:none;
   stroke:var(--yellow);
@@ -328,8 +328,8 @@ footer a{color:var(--yellow)}
   .price .tot{border-top:0;padding-top:0}
 }
 @media (max-width:420px){
+  .cta{display:block;text-align:center}
   .cta.ghost{margin-left:0;margin-top:.75rem}
-  .facts{grid-template-columns:1fr 1fr}
   .hero .top{flex-direction:column;align-items:flex-start;gap:.6rem}
 }
 @media (prefers-reduced-motion:reduce){
@@ -352,12 +352,6 @@ footer a{color:var(--yellow)}
         <h1>Detroit flight options, Nov 11-16</h1>
         <p class="lede">Four roundtrip fares from the Bay Area to Detroit in 2026. Every price is per person, with the total for 2 next to it.</p>
         <p class="note">We have SkyBridge miles, so options 1 and 4 could be paid with miles.</p>
-        <dl class="facts">
-          <div><dt>Travelers</dt><dd>Sid and Tori (2)</dd></div>
-          <div><dt>Trip dates</dt><dd>Nov 11-16, 2026</dd></div>
-          <div><dt>From</dt><dd>SFO, SJC or OAK</dd></div>
-          <div><dt>To</dt><dd>Detroit (DTW)</dd></div>
-        </dl>
         <a class="cta" href="#options">See the four options</a><a class="cta ghost" href="#compare">Compare totals</a>
       </div>
       <svg class="diagram" viewBox="0 0 520 300" role="img" aria-label="Three Bay Area airports, SFO, SJC and OAK, all connecting to Detroit, DTW">
@@ -445,7 +439,7 @@ footer a{color:var(--yellow)}
           <p class="num">Option 3</p>
           <h3>Zipjet</h3>
           <p class="rt">OAK <svg viewBox="0 0 34 20" aria-hidden="true"><path d="M0 10h30M22 2l10 8-10 8" fill="none" stroke="currentColor" stroke-width="3"/></svg> DTW</p>
-          <ul class="tags"><li>Nonstop</li><li class="stop">Budget carrier</li><li class="stop">Bags not included</li></ul>
+          <ul class="tags"><li>Nonstop</li></ul>
         </div>
         <dl class="legs">
           <div class="leg"><dt>Depart</dt><dd>Thu Nov 12, 6:15am</dd></div>
